@@ -85,7 +85,7 @@ body a{
     min-height:630px;	
 }
 .banner_1{
-	background:url(../images/banner_1.jpg)no-repeat center top;
+	/*background:url(../images/banner_1.jpg)no-repeat center top;*/
 	background-size:cover;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -116,6 +116,7 @@ body a{
     background: none;
     outline: none;
     font-weight: 300;
+    width: 280px;
 }
 .search_form1 input[type="text"]{
     padding: 8px;
