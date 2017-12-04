@@ -17,5 +17,5 @@ Route::get('/', function () {
 
 
 Route::get('phpinfo',function(){
-    return phpinfo();
+    phpinfo();
 });
