@@ -19,3 +19,12 @@ Route::get('/', function () {
 Route::get('phpinfo',function(){
     phpinfo();
 });
+
+Route::group(['prefix'=>'home'],function (){
+    Route::get('register',function (){
+       return view('index.register');
+    });
+
+
+
+});

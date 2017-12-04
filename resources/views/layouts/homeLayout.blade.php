@@ -24,7 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <!----font-Awesome----->
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default" style="height: 64px" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -107,19 +107,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     <!--/.navbar-collapse-->
 </nav>
-<div class="banner_1">
-    <div class="container">
-        <div id="search_wrapper1">
-            <div id="search_form" class="clearfix">
-                <h1>搜索文章</h1>
-                <p>
-                    <input type="text" class="text" placeholder="请输入关键词 .." value="" name="keywords">
-                    <label class="btn2 btn-2 btn2-1b"><input type="submit" value="Search"></label>
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 @yield('content')
 <div class="footer">
     <div class="container">
@@ -130,7 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <input type="text" class="form-control"  placeholder="Enter your email or account">
                 <input type="text" class="form-control" placeholder="Enter your password">
                 <button type="button" class="btn red"> 立 即 登 录 </button>
-                <a href="register.html" class="btn red"> 前 往 注 册 </a>
+                <a href="{{url('home/register')}}" class="btn red"> 前 往 注 册 </a>
             </form>
         </div>
         <div class="clearfix"></div>
