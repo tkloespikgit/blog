@@ -25,6 +25,7 @@ Route::group(['prefix'=>'home'],function (){
        return view('index.register');
     });
 
+    Route::post('register','HomeAuth@register');
 
 
 });
