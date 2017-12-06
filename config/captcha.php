@@ -5,7 +5,7 @@ return [
     'characters' => '2346789abcdefghjmnpqrtuxyzABCDEFGHJMNPQRTUXYZ',
 
     'default'   => [
-        'length'    => 5,
+        'length'    => 4,
         'width'     => 120,
         'height'    => 36,
         'quality'   => 90,
@@ -31,7 +31,7 @@ return [
 
     'inverse'   => [
         'length'    => 4,
-        'bgColor'   => '#eadddd',
+        'bgColor'   => '#ffffff',
         'fontColors'=> ['#2c3e50', '#c0392b', '#16a085', '#c0392b', '#8e44ad', '#303f9f', '#f57c00', '#795548'],
         'width'     => 120,
         'height'    => 36,

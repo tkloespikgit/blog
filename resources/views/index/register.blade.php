@@ -45,7 +45,7 @@
                                 <div class="input-group">
                                     <span class="input-group-addon "><i class="fa fa-lock"></i></span>
                                     <input type="text" style="width: 76%" name="verify_code" required="required" class="form-control " placeholder="Verify Code">
-                                    <img src="{{captcha_src('inverse')}}" style="width: 24%;height: 42px" onclick="this.src='/captcha/inverse?'+Math.random()">
+                                    <img src="{{captcha_src('default')}}" style="width: 24%;height: 42px" onclick="this.src='/captcha/default?'+Math.random()">
                                 </div>
                             </div>
                         <div class="login-btn">
