@@ -20,7 +20,7 @@ class HomeAuth extends Controller
                 'user_email' => 'required|email|unique:users,email',
                 'password' => 'required|min:8|max:16|confirmed',
                 'password_confirmation' => 'required',
-//                'verify_code' => 'required|captcha'
+                'verify_code' => 'required|captcha'
             ]);
 
             $user = new Users;
