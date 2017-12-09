@@ -11,6 +11,14 @@
                             <div class="section-title">
                                 <h3>Complete your information</h3>
                             </div>
+
+                            @if (count($errors))
+                                <div class="alert alert-danger">
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </div>
+                            @endif
                             <div class="textbox-wrap">
                                 <div class="input-group">
                                     <span class="input-group-addon "><i class="fa fa-user"></i></span>
@@ -38,7 +46,7 @@
                             <div class="textbox-wrap">
                                 <div class="input-group">
                                     <span class="input-group-addon "><i class="fa fa-key"></i></span>
-                                    <input type="password" name="re_password" required="required" class="form-control " placeholder="Confirm Password">
+                                    <input type="password" name="password_confirmation" required="required" class="form-control " placeholder="Confirm Password">
                                 </div>
                             </div>
                             <div class="textbox-wrap">
@@ -76,6 +84,11 @@
     <style>
         .fa{
             width: 25px;
+        }
+        .footer_bottom{
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
         }
     </style>
 @endsection
