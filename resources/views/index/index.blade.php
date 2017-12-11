@@ -3,6 +3,3 @@
 @section('content')
     content
 @endsection
-@section('footer')
-    @include('include.homeLogin')
-@endsection

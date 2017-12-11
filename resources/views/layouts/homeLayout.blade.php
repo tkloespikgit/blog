@@ -99,8 +99,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <li><a href="jobs.html">Diploma Jobs</a></li>
                     </ul>
                 </li>
-                <li><a name='login'>登录</a></li>
                 <li><a href="resume.html">个人中心</a></li>
+            @if(Session::has('member'))
+                    <li><a href="{{url('home/logout')}}">退出</a></li>
+                @else
+                    <li><a href='{{url('home/login')}}'>登录</a></li>
+                @endif
             </ul>
         </div>
         <div class="clearfix"></div>

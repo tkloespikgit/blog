@@ -4,6 +4,7 @@
     <div class="container">
         <div class="single">
             <div class="col-md-5 single_right">
+                @if(!Session::has('member'))
                 <div class="login-form-section">
                     <div class="login-content">
                         <form method="post" action="{{url('home/register')}}">
@@ -57,10 +58,10 @@
                                 </div>
                             </div>
                         <div class="login-btn">
-                            <input type="submit" value="Log in">
+                            <input type="submit" value="注册" style="float: right">
                         </div>
                         </form>
-                        <div class="login-bottom">
+                        {{--<div class="login-bottom">
                             <p>With your social media account</p>
                             <div class="social-icons">
                                 <div class="button">
@@ -74,9 +75,18 @@
                                 </div>
                                 <h4>Don,t have an Account? <a href="register.html"> Register Now!</a></h4>
                             </div>
-                        </div>
+                        </div>--}}
                     </div>
                 </div>
+                @else
+                    <div class="login-form-section">
+                        恭喜你注册成功，帐号激活链接已经发送至你的邮箱，请及时激活你的帐号以体验更多的功能！
+                        <a href="{{url('/')}}">前往主页</a>
+                    </div>
+                @endif
+            </div>
+            <div class="col-md-7 single_right" id="reg_bg">
+
             </div>
             <div class="clearfix"> </div>
         </div>
@@ -87,7 +97,7 @@
         }
         .footer_bottom{
             position: fixed;
-            bottom: 0px;
+            bottom: 0;
             width: 100%;
         }
     </style>

@@ -26,6 +26,10 @@ Route::group(['middleware'=>['web'],'prefix'=>'home'],function (){
     });
 
     Route::post('register','HomeAuth@register');
-
+    Route::get('logout','HomeAuth@logout');
+    Route::get('login',function (){
+        return view('index.login');
+    });
+    Route::post('login','HomeAuth@login');
 
 });
