@@ -10,7 +10,7 @@
                             <form method="post" action="{{url('home/login')}}">
                                 {{csrf_field()}}
                                 <div class="section-title">
-                                    <h3>Complete your information</h3>
+                                    <h4>请输入您的登录凭证：</h4>
                                 </div>
 
                                 @if (count($errors))
@@ -46,6 +46,7 @@
                                 </div>
                                 <div class="login-btn">
                                     <input type="submit" value="登录" style="float: right">
+                                    <a href="{{url("home/register")}}">前往注册</a>
                                 </div>
                             </form>
                         </div>

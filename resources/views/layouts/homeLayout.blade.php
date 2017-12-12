@@ -19,10 +19,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         }
 
         $(function () {
-            $("input").mouseenter(function () {
+            $("input").focusin(function () {
                 $("div.footer_bottom").css('display','none');
             });
-            $("input").mouseleave(function () {
+            $("input").focusout(function () {
                 $("div.footer_bottom").css('display','block');
             });
         })

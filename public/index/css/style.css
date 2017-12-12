@@ -2046,6 +2046,9 @@ p.sm_1{
 @media only screen and (max-width:1440px) {
 }
 @media only screen and (max-width:1024px) {
+#reg_bg{
+    display: none;
+}
 #search_wrapper {
     margin-top:5em;
 }
@@ -2510,7 +2513,13 @@ article.headings h3{
     height: 580px;
     -webkit-transform: rotate(180deg);
 }
+@media (max-width: 700px) {
+    #reg_bg{
+        display: none;
+    }
+}
 @media (max-width:384px){
+
 a.navbar-brand img {
     width: 110px;
 }
