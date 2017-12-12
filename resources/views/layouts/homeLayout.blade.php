@@ -6,17 +6,27 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="keywords" content="Seeking Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design"/>
+    <link href="{{asset('index/css/bootstrap-3.1.1.min.css')}}" rel='stylesheet' type='text/css'/>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{{asset('index/js/jquery.min.js')}}"></script>
+    <script src="{{asset('index/js/bootstrap.min.js')}}"></script>
     <script type="application/x-javascript"> addEventListener("load", function () {
             setTimeout(hideURLbar, 0);
         }, false);
 
         function hideURLbar() {
             window.scrollTo(0, 1);
-        } </script>
-    <link href="{{asset('index/css/bootstrap-3.1.1.min.css')}}" rel='stylesheet' type='text/css'/>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="{{asset('index/js/jquery.min.js')}}"></script>
-    <script src="{{asset('index/js/bootstrap.min.js')}}"></script>
+        }
+
+        $(function () {
+            $("input").mouseenter(function () {
+                $("div.footer_bottom").css('display','none');
+            });
+            $("input").mouseleave(function () {
+                $("div.footer_bottom").css('display','block');
+            });
+        })
+    </script>
     <!-- Custom Theme files -->
     <link href="{{asset('index/css/style.css')}}" rel='stylesheet' type='text/css'/>
     <!----font-Awesome----->
@@ -34,7 +44,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="{{asset('index/images/logo.png')}}" alt=""/></a>
+            <a class="navbar-brand" href="index.html"><img style="width: 172px;height: 52px" src="{{asset('index/images/logo.png')}}" alt=""/></a>
         </div>
         <!--/.navbar-header-->
         <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
